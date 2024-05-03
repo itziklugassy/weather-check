@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <datagrid></datagrid>
+</head>
+
+<!-- 
+תרגיל מזג אויר:
+כתוב תוכנית שבודקת את תנאי מזג האוויר בעיר נתונה. התוכנית שלך צריכה לבקש מהמשתמש להזין את שם העיר, האם יש כרגע שמש (אמת/שקר), ואת טמפרטורת האוויר בצלזיוס. לאחר מכן, בהתבסס על קלט המשתמש, התוכנית שלך צריכה להדפיס הודעה המציינת האם זהו יום טוב לצאת.
+אם יש שמש והטמפרטורה בין 20 ל-30 מעלות צלזיוס (כולל), התוכנית צריכה להדפיס: "זהו יום נהדר לצאת ב[עיר]!".
+אם אין שמש או שהטמפרטורה מתחת ל-20 מעלות צלזיוס, התוכנית צריכה להדפיס: "טוב יותר להישאר בפנים ב[עיר]".
+לתנאים אחרים, התוכנית צריכה להדפיס: "מצב מזג האוויר ב[עיר] הוא בינוני." -->
+<h1>Check weather</h1>
+
+<body>
+  <script>
+let city = prompt ("enter name of city")
+let sun = prompt ("there is sun outside?")
+let temp = parseInt( prompt ("what is the temp")) 
+
+if (temp >= 20 && temp <= 30 && sun==="yes") {  
+    console.log(`"tody is a good day to go out from ${city}`)
+    
+}
+else if (temp <=20 && sun === "no" )
+ {
+    console.log("better stay in the city theres no sun and temp under 20")
+}
+
+else if (temp >=30 && sun === "no") {
+  console.log(`the contsion now in ${city} are avarage`)
+  
+}
+
+  </script>
+</body>
+
+</html>
